@@ -3,12 +3,14 @@ package com.example.barbearia.service;
 import com.example.barbearia.exception.RegraNegocioException;
 import com.example.barbearia.model.entity.*;
 import com.example.barbearia.model.repository.ServicoRepository;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
+@Service
 public class ServicoService {
     private ServicoRepository repository;
 
